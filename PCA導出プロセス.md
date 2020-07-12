@@ -8,13 +8,13 @@
 $$
 Var(x) = \frac{1}{m}\sum_{i=1}^{m}(x_i-\bar{x})^{2}
 $$
-![1594559722631](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1594559722631.png)
+![1594559722631](./fig/1594559722631.png)
 
 だから、写真から見でわかりやすい、この赤い線を見つけたい。
 
 最初のステップはデミーン（`demean`）と呼ばれています。操作はすべてのサンプルの平均をゼロにすることです。
 
-![1594560170250](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1594560170250.png)
+![1594560170250](./fig/1594560170250.png)
 
 だから今の目標は
 $$
@@ -24,7 +24,7 @@ $$
 
 ---
 
-![1594565223839](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1594565223839.png)
+![1594565223839](./fig/1594565223839.png)
 
 すべてのサンプル$X^{(i)}$が$\vec{w}$にマッピングされた後、次のように記述できます。
 $$
@@ -48,7 +48,7 @@ $$
 
 ---
 
-![1594565231386](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1594565231386.png)
+![1594565231386](./fig/1594565231386.png)
 
 ベクトル内積の定義によると
 $$
@@ -144,7 +144,7 @@ def first_component(X, initial_w, eta, n_iters = 1e4, epsilon=1e-8):
 
 第二主成分は、元のポイントが`w`軸にマッピングされた後の残差ベクトル部分です。
 
-![1594569671478](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1594569671478.png)
+![1594569671478](./fig/1594569671478.png)
 
 緑のベクトルは第二主成分です。
 $$
